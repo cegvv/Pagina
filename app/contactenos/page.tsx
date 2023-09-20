@@ -74,9 +74,9 @@ function FormComponent() {
         type="email"
         label="Correo"
         placeholder="you@example.com"
-        startContent={
-          <MailIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
-        }
+        // startContent={
+          // <MailIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
+        // }
       />
       <Input
         type="number"
