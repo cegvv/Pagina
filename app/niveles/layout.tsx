@@ -1,4 +1,11 @@
-export default function PricingLayout({
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: {
+		default: "Niveles Impartidos",
+		template: `%s - Niveles Impartidos`,
+	},}
+export default function NivelesLayout({
 	children,
 }: {
 	children: React.ReactNode;
