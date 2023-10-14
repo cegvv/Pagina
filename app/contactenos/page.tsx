@@ -5,14 +5,17 @@ import { Input, Textarea } from "@nextui-org/input";
 
 export default function ContactenosPage() {
   return (
-    <Card className='w-[100%] p-10'>
+  <div>
+    <Card className='w-full m-0 p-10'>
       <h1 className={title()}>Contactenos</h1>
+
       <div className="flex flex-col mt-5 gap-5">
         <div className="flex flex-col gap-3">
           <Input
             type="text"
             label="Nombre Completo"
             placeholder="Pedro Rodriguez"
+            fullWidth
           />
 
           <Input
@@ -35,11 +38,10 @@ export default function ContactenosPage() {
           />
           <Textarea label="Mensaje" placeholder="Mensaje..." />
         </div>
-        {/* <div> */}
           <GoogleMap />
-        {/* </div> */}
       </div>
     </Card>
+    </div>
   );
 }
 
@@ -60,39 +62,3 @@ const MailIcon = (props: any) => (
     />
   </svg>
 );
-
-function FormComponent() {
-  return (
-    <div className="flex flex-col gap-4">
-      <Input
-        type="text"
-        label="Nombre Completo"
-        placeholder="Pedro Rodriguez"
-      />
-
-      <Input
-        type="email"
-        label="Correo"
-        placeholder="you@example.com"
-        startContent={
-          <MailIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
-        }
-      />
-      <Input
-        type="number"
-        label="Telefono"
-        placeholder="1234-5678"
-        startContent={
-          <div className="pointer-events-none flex items-center">
-            <span className="text-default-400 text-small">+503</span>
-          </div>
-        }
-      />
-      <Textarea
-        label="Mensaje"
-        placeholder="Mensaje..."
-        // className="flex-grow"
-      />
-    </div>
-  );
-}

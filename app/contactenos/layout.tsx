@@ -11,8 +11,8 @@ export default function ContactenosLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-			<div className="inline-block max-w-2xl text-center justify-center">
+		<section className="relative top-0 left-[27%] items-center py-8 md:py-10">
+			<div className="max-w-2xl text-center">
 				{children}
 			</div>
 		</section>
