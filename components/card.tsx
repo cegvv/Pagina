@@ -1,20 +1,20 @@
 // import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image} from "@nextui-org/react";
 "use client";
 import {
-    Card,
-    CardBody,
-    CardFooter,
-    CardHeader,
-    Divider,
-    Image,
-    Link,
-    Spacer,
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+  Divider,
+  Image,
+  Link,
+  Spacer,
 } from "@nextui-org/react";
 
 export default function CardComponent({ bodyContent, title, picture,link,linkText }: any) {
   return (
     // <Card className="max-w-[400px]">
-    <Card className="w-full mt-10">
+    <Card className="w-full mb-1">
       <CardHeader className="flex gap-3">
         <h1 className="text-xl ml-2">{title} </h1>
       </CardHeader>
@@ -24,6 +24,7 @@ export default function CardComponent({ bodyContent, title, picture,link,linkTex
         radius="none"
         alt="backgroudnimage"
         src={picture}
+        className='h-[25vh] w-[60vw] sm:w-[20rem]'
         />
         <Spacer />
         <p>{bodyContent}</p>

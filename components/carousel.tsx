@@ -12,16 +12,15 @@ interface CarouselComponentProps {
   }
 export default function CarouselComponent({images}: CarouselComponentProps) {
   return (
-        <Carousel className='mt-5' autoPlay={true} infiniteLoop={true} dynamicHeight={true}>
+        <Carousel centerMode centerSlidePercentage={100} className='mt-5 mx-5' autoPlay={true} infiniteLoop={true} dynamicHeight={true}>
             {images.map((object,key)=>{
                 return(
-            <div key={key}>
+            <div key={key} className="flex justify-center">
                 <Image style={{
+                    display:"contained",
                     borderRadius:'0',
                     height:"350px",
-                    width:"550px"
                     }} alt={object.label} src={object.link}/>
-                <p>{key}{object.label}</p>
             </div>
                 )
         })}

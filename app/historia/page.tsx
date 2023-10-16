@@ -1,36 +1,39 @@
+'use client'
 import CardComponent from "@/components/card";
 import { title } from "@/components/primitives";
-import { dataImages } from "@/types";
+import { siteConfig } from "@/types/webData";
+// import { SiteConfig } from "@/config/site";
 
-const data = {
-    mision:{
-        label:"Misión",
-        descripcion:""
-    },
-    vision:{
-        label:"Visión",
-        descripcion:""
-    }
-}
+// const data = {
+//     mision:{
+//         label:"Misión",
+//         descripcion:""
+//     },
+//     vision:{
+//         label:"Visión",
+//         descripcion:""
+//     }
+// }
+const dataTarjetas = siteConfig.Historia.tarjetas
+
+
 export default function HistoriaPage() {
 return (
 <div>
-    <h1 className={title()}>Nuestra Historia</h1>
-    <div className="flex flex-col lg:flex-row gap-4">
-        <CardComponent
-            title={data.mision.label}
-            bodyContent={data.mision.descripcion}
-            // link="https://github.com/nextui-org/nextui"
-            // linkText="visit us"
-            picture={dataImages[0].link}
-        />
-        <CardComponent
-            title={data.vision.label}
-            bodyContent={data.vision.descripcion}
-            // link="https://github.com/nextui-org/nextui"
-            // linkText="visit us"
-            picture={dataImages[1].link}
-        />
+    <h1 className={title()}>{siteConfig.Historia.titulo}</h1>
+    <div className="flex flex-col lg:flex-row flex-wrap flex-grow gap-4 mt-10">
+        {
+            dataTarjetas.map((tarjeta,key)=>(
+                <div key={key}>
+                    <CardComponent
+                    title={tarjeta.titulo}
+                    bodyContent={tarjeta.descripcion}
+                    link={tarjeta.link}
+                    picture={tarjeta.imagen}
+                    />
+                </div>
+            ))
+        }
     </div>
 </div>
 );

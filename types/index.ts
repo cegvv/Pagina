@@ -9,45 +9,45 @@ export type DataImages = {
   };
 export const dataImages:DataImages[] = [
     {
-      label: "SLA",
-      link: "https://res.cloudinary.com/do0bxzfhq/image/upload/v1695185349/223_gdux4x.jpg",
+      label: "Evento Payasos",
+      link: "https://res.cloudinary.com/dtjc8lv4b/image/upload/v1697324366/escuela/image9_sjgd1f.jpg",
     },
     {
-      label: "Whole OP",
-      link: "https://res.cloudinary.com/do0bxzfhq/image/upload/v1695185349/312_rmdt4v.jpg",
+      label: "Abanderados",
+      link: "https://res.cloudinary.com/dtjc8lv4b/image/upload/v1697324365/escuela/image8_fs6jbz.jpg",
     },
     {
-      label: "Mugiwaras movie",
-      link: "https://res.cloudinary.com/do0bxzfhq/image/upload/v1695185349/20230206_172645_bptrea.jpg",
+      label: "Padres",
+      link: "https://res.cloudinary.com/dtjc8lv4b/image/upload/v1697324365/escuela/image7_aqpffv.jpg",
     },
     {
-      label: "Alianza",
+      label: "Unk",
       link:
-        "https://res.cloudinary.com/do0bxzfhq/image/upload/v1695185350/IMG_2900_scvpqi.jpg",
+        "https://res.cloudinary.com/dtjc8lv4b/image/upload/v1697324365/escuela/image6_v77slf.jpg",
     },
     {
-      label: "Luffy, Nami and Sanji",
+      label: "Mural",
       link:
-      "https://res.cloudinary.com/do0bxzfhq/image/upload/v1695185350/jornada_isdemu_2.4_ahuwwn.jpg",
+      "https://res.cloudinary.com/dtjc8lv4b/image/upload/v1697324365/escuela/image5_iqqs4y.jpg",
     },
     {
-      label: "Luffy, Nami and Sanji",
+      label: "Maestros y alumnos",
       link:
-      "https://res.cloudinary.com/do0bxzfhq/image/upload/v1695185349/120_fcbovg.jpg",
+      "https://res.cloudinary.com/dtjc8lv4b/image/upload/v1697324365/escuela/image3_eivoue.jpg",
     },
     {
-      label: "Luffy, Nami and Sanji",
+      label: "Muro",
       link:
-      "https://res.cloudinary.com/do0bxzfhq/image/upload/v1695185349/2020-03-08_fkgu2s.jpg",
+      "https://res.cloudinary.com/dtjc8lv4b/image/upload/v1697324365/escuela/image4_dzt9o1.jpg",
     },
     {
-      label: "Luffy, Nami and Sanji",
+      label: "Asamblea General",
       link:
-      "https://res.cloudinary.com/do0bxzfhq/image/upload/v1695185349/2022-10-26_poves5.jpg",
+      "https://res.cloudinary.com/dtjc8lv4b/image/upload/v1697324365/escuela/image2_njnok5.jpg",
     },
     {
-      label: "Luffy, Nami and Sanji",
+      label: "Direccion",
       link:
-      "https://res.cloudinary.com/do0bxzfhq/image/upload/v1695185349/2020-03-081_qmgyjp.jpg",
+      "https://res.cloudinary.com/dtjc8lv4b/image/upload/v1697324364/escuela/image1_ckn1oh.jpg",
     },
   ];
