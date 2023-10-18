@@ -37,7 +37,7 @@ export type SiteConfig = {
 
 export const siteConfig = {
     Escuela:"Centro Escolar Gustavo Vides Valdes",
-    Historia:{
+    Historia: {
         titulo:"Nuestra Historia",
         tarjetas:
             [

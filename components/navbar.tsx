@@ -24,6 +24,13 @@ import NextLink from "next/link";
 const logo = "/New_Project-removebg-preview.svg"
 
 export const Navbar = () => {
+	// if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+	// 	console.log('darkmode');
+	// 	// You can handle dark mode preference here
+	//   }else{
+	// 	console.log("lightmode")
+	//   }
+
 	const searchInput = (
 		<Input
 			aria-label="Search"
@@ -50,7 +57,7 @@ export const Navbar = () => {
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="/">
-						<Image alt='logo' src={logo} as={NextImage} width={50} height={100}/>
+						<Image alt='logo' src={logo} as={NextImage} width={50} height={100} className='w-auto'/>
 					</NextLink>
 				</NavbarBrand>
 				<ul className="hidden lg:flex gap-4 justify-start ml-2">

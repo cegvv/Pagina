@@ -1,8 +1,8 @@
 # Next.js & NextUI Template
 
-This is a template for creating applications using Next.js 13 (app directory) and NextUI (v2).
+Fue creado a base del template Next.js 13 (app directory) & NextUI (v2), para utilizacion del routing the Next.JS y la estilizacion de NextUI y Tailwind
 
-## Technologies Used
+## Tecnologias/Frameworks Usados
 
 - [Next.js 13](https://nextjs.org/docs/getting-started)
 - [NextUI v2](https://nextui.org/)
@@ -11,30 +11,27 @@ This is a template for creating applications using Next.js 13 (app directory) an
 - [TypeScript](https://www.typescriptlang.org/)
 - [Framer Motion](https://www.framer.com/motion/)
 - [next-themes](https://github.com/pacocoursey/next-themes)
+- [react-responsive-carousel](https://github.com/leandrowd/react-responsive-carousel)
 
-## How to Use
+## Como Utilizar
+Si se quiere modificar los datos de cualquier pagina empieza por editar el archivo `types/webData.ts`
 
+### Para poder modificarlo mejor, empieza por clonar el repositorio
 
-### Use the template with create-next-app
-
-To create a new project based on this template using `create-next-app`, run the following command:
+Primero utilizar el comando `git clone`, corre el siguiente comando:
 
 ```bash
-npx create-next-app -e https://github.com/nextui-org/next-app-template
+git clone https://github.com/Zaroouk/school-landing
 ```
 
-### Install dependencies
+### Instala dependencias
 
 ```bash
 npm install
 ```
 
-### Run the development server
+### Inicia el Servidor en modo desarrollo
 
 ```bash
 npm run dev
 ```
-
-## License
-
-Licensed under the [MIT license](https://github.com/nextui-org/next-app-template/blob/main/LICENSE).
