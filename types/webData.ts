@@ -55,19 +55,7 @@ export const siteConfig = {
                     descripcion:"",
                     tieneLink:false,
                     link:""
-                },{
-                    titulo:"Visión",
-                    imagen:"https://res.cloudinary.com/dtjc8lv4b/image/upload/v1697324365/escuela/image8_fs6jbz.jpg",
-                    descripcion:"",
-                    tieneLink:false,
-                    link:""
-                },{
-                    titulo:"Visión",
-                    imagen:"https://res.cloudinary.com/dtjc8lv4b/image/upload/v1697324365/escuela/image8_fs6jbz.jpg",
-                    descripcion:"",
-                    tieneLink:false,
-                    link:""
-                }
+                },
             ]
         },
     Niveles:{

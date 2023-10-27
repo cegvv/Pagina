@@ -1,8 +1,8 @@
 'use client'
 import CardComponent from "@/components/card";
 import { title } from "@/components/primitives";
-import { siteConfig } from "@/types/webData";
-// import { SiteConfig } from "@/config/site";
+// import { siteConfig } from "@/types/webData";
+import { siteConfig } from "@/config/site";
 
 // const data = {
 //     mision:{
@@ -21,7 +21,7 @@ export default function HistoriaPage() {
 return (
 <div>
     <h1 className={title()}>{siteConfig.Historia.titulo}</h1>
-    <div className="flex flex-col lg:flex-row flex-wrap flex-grow gap-4 mt-10">
+    <div className="flex flex-col lg:flex-row flex-grow gap-4 mt-10">
         {
             dataTarjetas.map((tarjeta,key)=>(
                 <div key={key}>

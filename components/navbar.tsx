@@ -21,16 +21,11 @@ import { link as linkStyles } from "@nextui-org/theme";
 import clsx from "clsx";
 import NextImage from "next/image";
 import NextLink from "next/link";
-const logo = "/New_Project-removebg-preview.svg"
+// const logo = "/New_Project-removebg-preview.svg"
+// import Logo from "https://res.cloudinary.com/dtjc8lv4b/image/upload/v1697324325/escuela/New_Project-removebg-preview_bkwye7.svg";
+const logo = "https://res.cloudinary.com/dtjc8lv4b/image/upload/v1697324325/escuela/New_Project-removebg-preview_bkwye7.svg"
 
 export const Navbar = () => {
-	// if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-	// 	console.log('darkmode');
-	// 	// You can handle dark mode preference here
-	//   }else{
-	// 	console.log("lightmode")
-	//   }
-
 	const searchInput = (
 		<Input
 			aria-label="Search"
@@ -57,7 +52,7 @@ export const Navbar = () => {
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="/">
-						<Image alt='logo' src={logo} as={NextImage} width={50} height={100} className='w-auto'/>
+						<Image alt='logo' src={logo} as={NextImage} width={50} height={100}/>
 					</NextLink>
 				</NavbarBrand>
 				<ul className="hidden lg:flex gap-4 justify-start ml-2">

@@ -4,14 +4,9 @@ import { siteConfig } from "@/config/site";
 import "@/styles/globals.css";
 import clsx from "clsx";
 import { Metadata } from "next";
+import { Fragment } from "react";
 import { Providers } from "./providers";
 
-const instituto = {
-	nombre:"Centro Escolar Gustavo Vides Valdes",
-	telefono:"+503 2318 6574",
-	correo:"cegustavovidesvaldes@gmail.com",
-	direccion:"2ª Calle OTE. 2-1, Lourdes Colon, La Libertad"
-}
 
 export const metadata: Metadata = {
 	title: {
@@ -72,11 +67,9 @@ function Footer(){
 		<div className="mx-auto container py-8 xl:px-20 lg:px-12 sm:px-6 px-4">
   <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 md:gap-8 gap-4">
     <div className="flex flex-col flex-shrink-0">
-	  {/* <h1 className='font-extrabold'>Centro Escolar Gustavo Vides Valdés</h1> */}
-	  <h1 className='font-extrabold'>{instituto.nombre}</h1>
+	  <h1 className='font-extrabold'>{siteConfig.name}</h1>
       <p className="text-sm leading-none mt-4">Copyright © {new Date().getFullYear()}</p>
       <p className="text-sm leading-none mt-4">All rights reserved</p>
-	  {/* <p className="text-sm leading-none mt-4">Dirección: {instituto.direccion}</p> */}
 
       <div className="flex items-center gap-x-4 mt-12">
         <button aria-label="instagram" className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center">
@@ -103,19 +96,18 @@ function Footer(){
     </div>
     <div className="sm:ml-0 ml-8 flex flex-col">
       <h2 className="text-base font-semibold leading-4 text-gray-800 dark:text-white">Instituto</h2>
-      <a href="/" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Principal</a>
-      <a href="/historia" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Historia</a>
-      <a href="/niveles" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Niveles Impartidos</a>
-      <a href="/contactenos" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Contactenos</a>
-      {/* <a href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Testimonials</a> */}
+      {siteConfig.PiePagina.Instituto.map((value,key)=>(
+        <Fragment key={key}>
+        <a href={value.href} className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">{value.label}</a>
+        </Fragment>
+      ))}
+
     </div>
     <div className="flex flex-col">
       <h2 className="text-base font-semibold leading-4 text-gray-800 dark:text-white">Ayuda</h2>
-	  <p className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Dirección: {instituto.direccion}</p>
-      <a href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Telefono: {instituto.telefono}</a>
-      <a href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Correo: {instituto.correo}</a>
-      {/* <a href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">{instituto.}</a>
-      <a href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Terms of service</a> */}
+	  <p className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Dirección: {siteConfig.PiePagina.Ayuda.Direccion}</p>
+      <p className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Telefono: {siteConfig.PiePagina.Ayuda.Telefono}</p>
+      <p className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Correo: {siteConfig.PiePagina.Ayuda.Correo}</p>
     </div>
     <div className="mt-10 lg:block hidden">
       <label className="text-xl font-medium leading-5 text-gray-800 dark:text-white">¿Quieres conocer mas de nosotros?</label>
