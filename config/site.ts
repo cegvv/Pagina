@@ -139,5 +139,18 @@ export const siteConfig = {
             Telefono:"+503 7328 4287",
             Correo:"cegustavovidesvaldes@gmail.com"
         }
-    }
+    },
+    PlantillaCorreo:
+      {
+        PrimeraLineaTitulo:"Conoce Más Sobre Nosotros En:",
+        SegundaLineaTitulo:"Centro Escolar Gustavo Vides Valdes",
+        InformacionInstitucionPrimeraLinea:"¡Gracias por suscribirte a nuestro boletín de noticias! A partir de ahora, recibirás nuestras actualizaciones periódicas directamente en tu bandeja de entrada.",
+        InformacionInstitucionSegundaLinea:"Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.",
+        InformacionSuscripcionPrimeraLinea: "¡Gracias por suscribirte a nuestro boletín de noticias! A partir de ahora, recibirás nuestras actualizaciones periódicas directamente en tu bandeja de entrada.",
+        InformacionSuscripcionSegundaLinea:"Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.",
+        EquipoEncargado:"Centro Escolar Gustavo Vides Valdes",
+        CargoEquipoEncargado:"Equipo de Comunicaciones",
+        Despedida:"Recuerda Visitar Nuestras Instalaciones"
+      }
+
 };

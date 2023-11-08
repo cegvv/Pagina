@@ -1,24 +1,52 @@
+'use client'
+import { FormInput, onSubmit } from '@/components/SendEmail';
 import GoogleMap from "@/components/mapComponent";
 import { title } from "@/components/primitives";
 import { Card } from "@nextui-org/card";
 import { Input, Textarea } from "@nextui-org/input";
+import { Button } from '@nextui-org/react';
+import { useState } from "react";
 
 export default function ContactenosPage() {
+  const [nombre,setNombre] = useState("")
+  const [correo,setCorreo] = useState("")
+  const [telefono,setTelefono] = useState("")
+  const [mensaje,setMensaje] = useState("")
+  const dataForm:FormInput = {
+    name:nombre,
+    email:correo,
+    telefono:telefono,
+    mensaje:mensaje
+  }
+  const formatPhoneNumber = (input:any) => {
+
+    let formattedNumber = input
+    .replace(/\D/g, '') // Remove all non-numeric characters
+    .replace(/(\d{4})(\d{0,4})/, '$1 $2'); // Add a space after the fourth digit
+
+    setTelefono(formattedNumber.trim());
+  };
+  const handleOnSubmit = () => onSubmit(dataForm)
+console.log(telefono)
   return (
   <div>
     <Card className='w-full m-0 p-10'>
       <h1 className={title()}>Contactenos</h1>
 
       <div className="flex flex-col mt-5 gap-5">
-        <div className="flex flex-col gap-3">
+        <form onSubmit={handleOnSubmit} className="flex flex-col gap-3">
           <Input
             type="text"
             label="Nombre Completo"
             placeholder="Pedro Rodriguez"
             fullWidth
+            onChange={(e)=>setNombre(e.target.value)}
+            value={nombre}
           />
 
           <Input
+          onChange={(e)=>setCorreo(e.target.value)}
+          value={correo}
             type="email"
             label="Correo"
             placeholder="you@example.com"
@@ -27,7 +55,10 @@ export default function ContactenosPage() {
             }
           />
           <Input
-            type="number"
+          onChange={(e)=>formatPhoneNumber(e.target.value)}
+          value={telefono}
+          maxLength={9}
+            type="tel"
             label="Telefono"
             placeholder="1234-5678"
             startContent={
@@ -36,8 +67,9 @@ export default function ContactenosPage() {
               </div>
             }
           />
-          <Textarea label="Mensaje" placeholder="Mensaje..." />
-        </div>
+          <Textarea value={mensaje} onChange={(e)=>setMensaje(e.target.value)} label="Mensaje" placeholder="Mensaje..." />
+          <Button onClick={handleOnSubmit}>Enviar</Button>
+        </form>
           <GoogleMap />
       </div>
     </Card>
