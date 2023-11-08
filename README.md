@@ -14,7 +14,7 @@ Fue creado a base del template Next.js 13 (app directory) & NextUI (v2), para ut
 - [react-responsive-carousel](https://github.com/leandrowd/react-responsive-carousel)
 
 ## Como Utilizar
-Si se quiere modificar los datos de cualquier pagina empieza por editar el archivo `types/webData.ts`
+Si se quiere modificar los datos de cualquier pagina empieza por editar el archivo `config/site.ts`
 
 ### Para poder modificarlo mejor, empieza por clonar el repositorio
 
