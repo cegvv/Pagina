@@ -1,19 +1,9 @@
 'use client'
 import CardComponent from "@/components/card";
 import { title } from "@/components/primitives";
-// import { siteConfig } from "@/types/webData";
 import { siteConfig } from "@/config/site";
 
-// const data = {
-//     mision:{
-//         label:"Misión",
-//         descripcion:""
-//     },
-//     vision:{
-//         label:"Visión",
-//         descripcion:""
-//     }
-// }
+
 const dataTarjetas = siteConfig.Historia.tarjetas
 
 

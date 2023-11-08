@@ -21,8 +21,7 @@ import { link as linkStyles } from "@nextui-org/theme";
 import clsx from "clsx";
 import NextImage from "next/image";
 import NextLink from "next/link";
-// const logo = "/New_Project-removebg-preview.svg"
-// import Logo from "https://res.cloudinary.com/dtjc8lv4b/image/upload/v1697324325/escuela/New_Project-removebg-preview_bkwye7.svg";
+
 const logo = "https://res.cloudinary.com/dtjc8lv4b/image/upload/v1697324325/escuela/New_Project-removebg-preview_bkwye7.svg"
 
 export const Navbar = () => {
@@ -78,18 +77,12 @@ export const Navbar = () => {
 				justify="end"
 			>
 				<NavbarItem className="hidden sm:flex gap-2">
-					{/* <Link isExternal href={siteConfig.links.twitter} aria-label="Twitter">
-						<TwitterIcon className="text-default-500" />
-					</Link> */}
 
 					<ThemeSwitch />
 				</NavbarItem>
 			</NavbarContent>
 
 			<NavbarContent className="lg:hidden basis-1 pl-4" justify="end">
-				{/* <Link isExternal href={siteConfig.links.github} aria-label="Github">
-					<GithubIcon className="text-default-500" />
-				</Link> */}
 				<ThemeSwitch />
 				<NavbarMenuToggle />
 			</NavbarContent>

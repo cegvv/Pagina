@@ -3,10 +3,7 @@ import { DataImages } from '@/types/index';
 import { Image } from '@nextui-org/react';
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-// type DataImages = {
-//   label: string;
-//   link: string;
-// };
+
 interface CarouselComponentProps {
     images: DataImages[];
   }

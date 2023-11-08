@@ -21,8 +21,8 @@ export default function ContactenosPage() {
   const formatPhoneNumber = (input:any) => {
 
     let formattedNumber = input
-    .replace(/\D/g, '') // Remove all non-numeric characters
-    .replace(/(\d{4})(\d{0,4})/, '$1 $2'); // Add a space after the fourth digit
+    .replace(/\D/g, '')
+    .replace(/(\d{4})(\d{0,4})/, '$1 $2');
 
     setTelefono(formattedNumber.trim());
   };

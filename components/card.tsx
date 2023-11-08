@@ -1,4 +1,3 @@
-// import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image} from "@nextui-org/react";
 "use client";
 import {
   Card,
@@ -33,7 +32,6 @@ export default function CardComponent({ bodyContent, title, picture,link,linkTex
          <Link
           isExternal
           showAnchorIcon
-        //   href="https://github.com/nextui-org/nextui"
         href={link}
         >
           {linkText}

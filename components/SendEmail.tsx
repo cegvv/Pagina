@@ -40,7 +40,7 @@ async function onSubmitFooter(correo: string) {
         },
 
         body: JSON.stringify({
-          correo: correo, // Assuming 'correo' is the key for the email address
+          correo: correo,
         }),
       },);
       if (!response.ok) {
@@ -61,14 +61,12 @@ interface dataUsuario{
 }
 
   export function Footer(){
-    // let email = "";
+
     const [footerEmail,setFooterEmail] = React.useState("")
     function handleClick(event: React.MouseEvent<HTMLButtonElement>): void {
-        // Call the asynchronous function onSubmitFooter here
+
         onSubmitFooter(footerEmail);
       }
-    //   const handleEmail = () => SendEmailFooter("emanuel.menjivar11@gmail.com")
-    // const onChangeEmail = (e:any)=> email = e.target.value
     const onChangeEmail = (e:any)=> setFooterEmail(e.target.value)
     console.log(footerEmail)
       return(

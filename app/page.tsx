@@ -19,15 +19,6 @@ export default function Home() {
 					Te invitamos a que puedas <Link className="text-lg lg:text-xl" href='/niveles'>conocer</Link> los niveles que impartimos
 				</h2>
 			</div>
-				{/* <Link
-					isExternal
-					as={NextLink}
-					className={buttonStyles({ variant: "bordered", radius: "full" })}
-					href={siteConfig.links.github}
-				>
-					<GithubIcon size={20} />
-					GitHub
-				</Link> */}
 		</section>
 	);
 }
